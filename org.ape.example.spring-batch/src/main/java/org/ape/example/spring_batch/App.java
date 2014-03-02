@@ -1,4 +1,4 @@
-package org.ape.org.ape.example.spring_batch;
+package org.ape.example.spring_batch;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
