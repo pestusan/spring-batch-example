@@ -7,17 +7,17 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class App 
+public class App
 {
 	  public static void main(String[] args) {
 		  
-			String[] springConfig  = 
-				{	"spring/batch/config/database.xml", 
-					"spring/batch/config/context.xml",
-					"spring/batch/jobs/job1.xml" 
+			String[] springConfig  =
+        { "spring/batch/config/database_oracle.xml",
+ "spring/batch/config/context_oracle.xml",
+					"spring/batch/jobs/job1.xml"
 				};
 		 
-			ApplicationContext context = 
+			ApplicationContext context =
 				new ClassPathXmlApplicationContext(springConfig);
 		 
 			JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");

@@ -7,8 +7,8 @@
 		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 	">
  
-	<import resource="../config/context.xml" />
-	<import resource="../config/database.xml" />
+	<import resource="../config/context_oracle.xml" />
+	<import resource="../config/database_oracle.xml" />
  
 	<bean id="report" class="org.ape.example.spring_batch.domain.TOObject" scope="prototype" />
 	<bean id="itemProcessor" class="org.ape.example.spring_batch.TOObjectItemProcessor" />
